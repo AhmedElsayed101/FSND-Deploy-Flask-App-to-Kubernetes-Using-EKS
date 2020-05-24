@@ -29,4 +29,5 @@ htmlcov/
 
 **/.vscode/
 **/examples/
+.env-file
 comm.md
