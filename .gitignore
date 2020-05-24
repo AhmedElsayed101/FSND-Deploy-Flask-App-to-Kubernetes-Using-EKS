@@ -27,7 +27,7 @@ htmlcov/
 .envrc
 .direnv
 
-# **/.vscode/
+**/.vscode/
 **/examples/
-# .env-file
+.env-file
 comm.md
