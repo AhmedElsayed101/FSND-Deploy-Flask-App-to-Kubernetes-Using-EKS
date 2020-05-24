@@ -88,12 +88,17 @@ def decode_jwt():
     Check user token and return non-secret data
     """
     if not 'Authorization' in request.headers:
+        
         abort(401)
     data = request.headers['Authorization']
     token = str.replace(str(data), 'Bearer ', '')
+    token_part  = token.split(' ')[1]
+    # print(tocken_part)
     try:
-        data = jwt.decode(token, JWT_SECRET, algorithms=['HS256'])
+        print('a8a')
+        data = jwt.decode(token_part, JWT_SECRET, algorithms=['HS256'])
     except: # pylint: disable=bare-except
+        print('a9a')
         abort(401)
 
 
