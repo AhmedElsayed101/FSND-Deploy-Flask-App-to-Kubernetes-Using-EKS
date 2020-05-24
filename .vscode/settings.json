@@ -1,0 +1,9 @@
+{
+   
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_flask_sqlalchemy "
+    ],
+    "python.pythonPath": "/home/ahmed/Desktop/alternateDesktop/alternateDesktop2/practiceCode/web/backend/flask/virtualenvs/Nano/Deploy-4th-proj/bin/python"
+ 
+    
+}
